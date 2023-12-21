@@ -9,3 +9,19 @@ font-family: 'Roboto', sans-serif;
 
 
 */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.btn {
+    padding: 15px 25px;
+    background: #EDB81A;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    font-family: 'Merriweather', serif;
+}
