@@ -13,7 +13,7 @@ const Footer = () => {
 						<h2 className="text-white font-bold text-xl mb-6">Important Links</h2>
 						<ul>
 							<li className="text-white ">
-								<Link to="/home">Home</Link>
+								<Link to="/">Home</Link>
 							</li>
 							<li className="text-white ">
 								<Link to="/login">Login</Link>
