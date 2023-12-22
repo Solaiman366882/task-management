@@ -2,8 +2,8 @@ import { Navbar } from "flowbite-react";
 
 const Header = () => {
 	return (
-		<div>
-			<Navbar fluid rounded>
+		<div className="bg-[#A4EDE6]">
+			<Navbar fluid rounded className="bg-[#A4EDE6]">
 				<Navbar.Brand href="/">
 					{/* <img
 						src="/favicon.svg"
