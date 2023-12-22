@@ -25,7 +25,7 @@ const AddTask = () => {
         }
         axios.post('http://localhost:5000/task',newTask)
         .then(res => {
-            console.log(res.data);
+            //console.log(res.data);
             if(res.data?.insertedId)
             {
                 Swal.fire({
