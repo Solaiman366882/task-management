@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import SidebarHolder from "../Component/Sidebar/SidebarHolder";
 import { AuthContext } from "../Provider/AuthProvider";
+import { Outlet } from "react-router-dom";
 
 const DashboardLayout = () => {
 	const { user } = useContext(AuthContext);
@@ -25,6 +26,9 @@ const DashboardLayout = () => {
 						</div>
 						<div>hi</div>
 					</div>
+				</div>
+				<div>
+					<Outlet></Outlet>
 				</div>
 			</div>
 		</div>

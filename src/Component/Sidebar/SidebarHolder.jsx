@@ -11,8 +11,8 @@ import {
 const SidebarHolder = () => {
 	return (
 		<div>
-			<Sidebar aria-label="Default sidebar" >
-				<Sidebar.Items>
+			<Sidebar aria-label="sidebar" className="bg-[#A4EDE6]" >
+				<Sidebar.Items className="bg-[#A4EDE6]">
 					<Sidebar.ItemGroup>
 						<Sidebar.Item href="#" icon={HiChartPie}>
 							Dashboard
@@ -20,13 +20,11 @@ const SidebarHolder = () => {
 						<Sidebar.Item
 							href="#"
 							icon={HiViewBoards}
-							label="Pro"
-							labelColor="dark"
 						>
 							Kanban
 						</Sidebar.Item>
-						<Sidebar.Item href="#" icon={HiInbox} label="3">
-							Inbox
+						<Sidebar.Item href="/dashboard/addTask" icon={HiInbox} >
+							Add Task
 						</Sidebar.Item>
 						<Sidebar.Item href="#" icon={HiUser}>
 							Users
