@@ -13,7 +13,7 @@ const Benifit = () => {
 						anyone can be benefited.
 					</p>
 				</div>
-				<div className="flex gap-5 items-center">
+				<div className="flex flex-col lg:flex-row gap-5 items-center">
 					<div className="flex-1">
 						<img src={benefitImg} alt="" />
 					</div>

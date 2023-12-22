@@ -4,9 +4,8 @@ const Footer = () => {
 	return (
 		<div className="bg-[#0C303C]">
 			<div className="py-16">
-				<div className="max-w-screen-xl mx-auto px-5 flex justify-around">
+				<div className="max-w-screen-xl mx-auto px-5 flex flex-col md:flex-row justify-center gap-5 md:justify-around">
 					<h2 className="text-white font-bold text-3xl">
-						{" "}
 						<Link to="/">M Task</Link>
 					</h2>
 					<div>

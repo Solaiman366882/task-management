@@ -4,12 +4,12 @@ const Banner = () => {
 	return (
 		<section className="banner-section">
 			<div className="max-w-screen-xl mx-auto p-5 h-full">
-				<div className="hero w-full flex min-h-[80vh] flex-col justify-center">
+				<div className="hero w-full flex min-h-[80vh] flex-col justify-center text-center items-center lg:items-start">
 					<h1 className="text-[#FF6D3C] font-bold text-6xl">
 						M Task
 					</h1>
 					<p className="mt-3 mb-6 font-medium text-lg">
-						Manage your task or work, and track them to <br />{" "}
+						Manage your task or work, and track them to <br className="hidden md:block" />{" "}
 						increase your productivity. Its easy to operate ...
 					</p>
 					<div>

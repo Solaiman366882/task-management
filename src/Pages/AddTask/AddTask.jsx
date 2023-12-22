@@ -23,7 +23,7 @@ const AddTask = () => {
             taskOwner:user?.displayName,
             email:user?.email,
         }
-        axios.post('http://localhost:5000/task',newTask)
+        axios.post('https://task-management-server-steel-kappa.vercel.app/task',newTask)
         .then(res => {
             //console.log(res.data);
             if(res.data?.insertedId)

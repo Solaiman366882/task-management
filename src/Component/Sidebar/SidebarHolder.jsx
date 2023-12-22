@@ -3,10 +3,8 @@ import {
 	HiArrowSmRight,
 	HiChartPie,
 	HiInbox,
-	HiShoppingBag,
 	HiTable,
-	HiUser,
-	HiViewBoards,
+	HiHome,
 } from "react-icons/hi";
 const SidebarHolder = () => {
 	return (
@@ -14,28 +12,22 @@ const SidebarHolder = () => {
 			<Sidebar aria-label="sidebar" className="bg-[#A4EDE6]" >
 				<Sidebar.Items className="bg-[#A4EDE6]">
 					<Sidebar.ItemGroup>
-						<Sidebar.Item href="#" icon={HiChartPie}>
+						<Sidebar.Item href="/dashboard" icon={HiChartPie}>
 							Dashboard
 						</Sidebar.Item>
 						<Sidebar.Item
-							href="#"
-							icon={HiViewBoards}
+							href="/"
+							icon={HiHome}
 						>
-							Kanban
+							Home
 						</Sidebar.Item>
 						<Sidebar.Item href="/dashboard/addTask" icon={HiInbox} >
 							Add Task
 						</Sidebar.Item>
-						<Sidebar.Item href="#" icon={HiUser}>
-							Users
-						</Sidebar.Item>
-						<Sidebar.Item href="#" icon={HiShoppingBag}>
-							Products
-						</Sidebar.Item>
-						<Sidebar.Item href="#" icon={HiArrowSmRight}>
+						<Sidebar.Item href="/login" icon={HiArrowSmRight}>
 							Sign In
 						</Sidebar.Item>
-						<Sidebar.Item href="#" icon={HiTable}>
+						<Sidebar.Item href="/register" icon={HiTable}>
 							Sign Up
 						</Sidebar.Item>
 					</Sidebar.ItemGroup>
