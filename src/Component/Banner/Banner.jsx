@@ -14,7 +14,7 @@ const Banner = () => {
 					</p>
 					<div>
 						<div className="">
-							<Link to="/login">
+							<Link to="/dashboard">
 								<button className="btn">
 									{"Let's Explore"}
 								</button>

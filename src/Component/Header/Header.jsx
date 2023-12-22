@@ -1,6 +1,9 @@
 import { Navbar } from "flowbite-react";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Header = () => {
+	const {user} =  useContext(AuthContext);
 	return (
 		<div className="bg-[#A4EDE6]">
 			<Navbar fluid rounded className="bg-[#A4EDE6]">
@@ -16,15 +19,14 @@ const Header = () => {
 				</Navbar.Brand>
 				<Navbar.Toggle />
 				<Navbar.Collapse>
-					<Navbar.Link href="#" active>
+					<Navbar.Link href="/">
 						Home
 					</Navbar.Link>
-					<Navbar.Link  href="#">
-						About
+					<Navbar.Link  href="/login">
+						Login
 					</Navbar.Link>
-					<Navbar.Link href="#">Services</Navbar.Link>
-					<Navbar.Link href="#">Pricing</Navbar.Link>
-					<Navbar.Link href="#">Contact</Navbar.Link>
+					<Navbar.Link href="/Register">Register</Navbar.Link>
+					{user?.email ? <Navbar.Link href="#">Logout</Navbar.Link> : ""}
 				</Navbar.Collapse>
 			</Navbar>
 		</div>
