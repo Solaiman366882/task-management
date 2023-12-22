@@ -1,8 +1,15 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../../Component/SocialLogin/SocialLogin";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
+	const location = useLocation();
+
+	const navigate = useNavigate();
+	const { userLogin } = useContext(AuthContext);
 	const {
 		register,
 		handleSubmit,
@@ -10,7 +17,14 @@ const Login = () => {
 	} = useForm();
 
 	const handleLogin = (data) => {
-		console.log(data);
+		userLogin(data.email, data.password)
+			.then((result) => {
+				//redirect after successfull login
+				navigate(location?.state ? location.state : "/");
+				console.log(result);
+				Swal.fire("Good job!", "Login Successfully", "success");
+			})
+			.catch((err) => console.log(err));
 	};
 
 	return (
