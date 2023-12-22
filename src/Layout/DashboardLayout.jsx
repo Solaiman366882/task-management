@@ -27,7 +27,7 @@ const DashboardLayout = () => {
 						<div>hi</div>
 					</div>
 				</div>
-				<div>
+				<div className="mt-8">
 					<Outlet></Outlet>
 				</div>
 			</div>
